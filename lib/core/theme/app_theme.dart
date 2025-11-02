@@ -22,7 +22,7 @@ final ThemeData appTheme = ThemeData(
   ),
 );
 
-///to change the text default color, just overide the colour directly
+///to change the text default color, just override the colour directly
 /*Text(
 'Get Started',
 style: Theme.of(context).textTheme.displayLarge!.copyWith(
