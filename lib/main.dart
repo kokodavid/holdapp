@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:hold_app/presentation/splash/screens/splash_screen.dart';
+
+import 'core/theme/app_theme.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,10 +12,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: appTheme,
       home: Scaffold(
         body: Center(
-          child: Text('Hello World!'),
+          child: SplashPage(),
         ),
       ),
     );
