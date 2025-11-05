@@ -18,7 +18,7 @@ class SplashPage extends StatelessWidget {
         listener: (context, state) {
           if (state is SplashLoaded) {
             Navigator.of(context).pushReplacement(
-              MaterialPageRoute(builder: (context) => const OnboardingPage()),
+              MaterialPageRoute(builder: (context) => const OnboardingScreen()),
             );
           }
         },
