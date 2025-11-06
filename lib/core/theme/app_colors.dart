@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   // Accent / Brand Color
-  static const Color accent = Color(0xFF5A3FFB); // Purple from Figma
+  static const Color accent = Color(0xFF3B298E); 
+  static const Color lightShade = Color(0xFFF5F5F5);
 
   // Surface / Background Colors
   static const Color surface = Color(0xFFFFFFFF);

@@ -18,7 +18,7 @@ class SplashPage extends StatelessWidget {
         listener: (context, state) {
           if (state is SplashLoaded) {
             Navigator.of(context).pushReplacement(
-              MaterialPageRoute(builder: (context) => const OnboardingPage()),
+              MaterialPageRoute(builder: (context) => const OnboardingScreen()),
             );
           }
         },
@@ -27,8 +27,8 @@ class SplashPage extends StatelessWidget {
           body: Center(
             child: Image.asset(
               'assets/img/logo.png',
-              width: 120,
-              height: 120,
+              width: 130,
+              height: 150,
             ),
           ),
         ),

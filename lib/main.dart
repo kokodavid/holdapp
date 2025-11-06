@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:hold_app/presentation/splash/screens/splash_screen.dart';
-
+import 'core/routes/routes.dart';
+import 'core/routes/app_navigator.dart';
 import 'core/theme/app_theme.dart';
+import 'injection_container.dart' as di;
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await di.initDependencies();
   runApp(const MainApp());
 }
 
@@ -13,12 +16,12 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'HoldApp',
       theme: appTheme,
-      home: Scaffold(
-        body: Center(
-          child: SplashPage(),
-        ),
-      ),
+      navigatorKey: AppNavigator.navigatorKey,
+      initialRoute: AppRoutes.splash,
+      onGenerateRoute: AppRouteGenerator.generateRoute,
+      debugShowCheckedModeBanner: false,
     );
   }
 }
