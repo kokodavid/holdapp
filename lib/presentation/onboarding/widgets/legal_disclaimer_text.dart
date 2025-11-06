@@ -49,7 +49,7 @@ class LegalDisclaimerText extends StatelessWidget {
             ),
             const TextSpan(
               text:
-                  ". At HoldApp, your personal goals, logs, and accountability data remain private by default.",
+                  ". At The HoldApp, your personal goals, logs, and accountability data remain private by default.",
             ),
           ],
         ),
