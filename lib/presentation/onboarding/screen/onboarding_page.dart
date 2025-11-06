@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/widgets/app_button.dart';
+import '../../../core/routes/routes.dart';
+import '../../../core/routes/app_navigator.dart';
 import '../../../injection_container.dart';
-import '../../auth/screen/home_page.dart';
 import '../bloc/onboarding_bloc.dart';
 import '../bloc/onboarding_event.dart';
 import '../bloc/onboarding_state.dart';
@@ -22,10 +23,7 @@ class OnboardingScreen extends StatelessWidget {
       child: BlocListener<OnboardingBloc, OnboardingState>(
         listener: (context, state) {
           if (state is OnboardingCompleted) {
-            Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(builder: (_) => const HomePage()),
-            );
+            AppNavigator.pushNamedAndClearStack(AppRoutes.home);
           }
         },
         child: Scaffold(
@@ -64,12 +62,7 @@ class OnboardingScreen extends StatelessWidget {
                           backgroundColor: AppColors.lightShade,
                           textColor: AppColors.accent,
                           onPressed: () {
-                            Navigator.pushReplacement(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const HomePage(),
-                              ),
-                            );
+                            AppNavigator.pushReplacementNamed(AppRoutes.home);
                           },
                         ),
                       ],
