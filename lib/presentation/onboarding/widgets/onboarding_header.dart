@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hold_app/core/theme/color_styles.dart';
+import 'package:hold_app/core/theme/app_colors.dart';
 
 class OnboardingHeader extends StatelessWidget {
   const OnboardingHeader({super.key});

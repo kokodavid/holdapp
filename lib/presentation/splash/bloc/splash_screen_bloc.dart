@@ -13,7 +13,7 @@ class SplashBloc extends Bloc<SplashEvent, SplashState> {
       SplashStarted event,
       Emitter<SplashState> emit,
       ) async {
-    await Future.delayed(const Duration(seconds:3)); // splash duration
+    await Future.delayed(const Duration(seconds:3));
     emit(SplashLoaded());
   }
 }
