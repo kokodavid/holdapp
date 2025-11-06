@@ -126,11 +126,11 @@ class AppButton extends StatelessWidget {
 
     switch (size) {
       case AppButtonSize.small:
-        return const EdgeInsets.symmetric(horizontal: 16, vertical: 8);
+        return const EdgeInsets.symmetric(horizontal: 16, vertical: 12);
       case AppButtonSize.medium:
-        return const EdgeInsets.symmetric(horizontal: 24, vertical: 16);
+        return const EdgeInsets.symmetric(horizontal: 24, vertical: 14);
       case AppButtonSize.large:
-        return const EdgeInsets.symmetric(horizontal: 32, vertical: 20);
+        return const EdgeInsets.symmetric(horizontal: 32, vertical: 16);
     }
   }
 

@@ -28,10 +28,11 @@ class OnboardingHeader extends StatelessWidget {
                 "Grow",
                 Theme.of(context).textTheme.displayMedium!.copyWith(
                   fontWeight: FontWeight.w700,
-                  height: 1.1,    fontSize:40,
+                  height: 1.1,
+                  fontSize: 30,
                 ),
               ),
-              const SizedBox(width: 3),
+              const SizedBox(width: 6),
               CircleAvatar(
                 backgroundColor: Colors.transparent,
                 radius: 25,
@@ -41,11 +42,12 @@ class OnboardingHeader extends StatelessWidget {
                   width: 50,
                 ),
               ),
-              const SizedBox(width: 3),
+              const SizedBox(width: 6),
               _text(
                 "with",
                 theme.textTheme.displayMedium!.copyWith(
-                  fontWeight: FontWeight.w700,   fontSize:35,
+                  fontWeight: FontWeight.w700,
+                  fontSize: 30,
                   height: 1.1,
                 ),
               ),
@@ -54,7 +56,8 @@ class OnboardingHeader extends StatelessWidget {
                 "the",
                 theme.textTheme.displaySmall!.copyWith(
                   color: AppColors.textTertiary,
-                  fontWeight: FontWeight.w700,  fontSize:35,
+                  fontWeight: FontWeight.w700,
+                  fontSize: 30,
                   height: 1.2,
                 ),
               ),
@@ -72,10 +75,11 @@ class OnboardingHeader extends StatelessWidget {
                 theme.textTheme.displayMedium!.copyWith(
                   color: AppColors.textTertiary,
                   fontWeight: FontWeight.w700,
-                  fontSize:35,
+                  fontSize: 28,
                   height: 1.2,
                 ),
               ),
+              const SizedBox(width: 6),
 
               CircleAvatar(
                 backgroundColor: Colors.transparent,
@@ -95,7 +99,8 @@ class OnboardingHeader extends StatelessWidget {
           _text(
             "partner",
             theme.textTheme.displayMedium!.copyWith(
-              fontWeight: FontWeight.w700,   fontSize:35,
+              fontWeight: FontWeight.w700,
+              fontSize: 30,
               height: 1.1,
             ),
           ),
