@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:600375300333:android:f56425ea7e9886f713bce4",
+        "mobilesdk_app_id": "1:600375300333:android:6a0194e38b8de49a13bce4",
         "android_client_info": {
-          "package_name": "com.example.hold_app"
+          "package_name": "com.giglab.holdapp"
         }
       },
       "oauth_client": [],
