@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "600375300333",
+    "project_id": "holdapp-e820a",
+    "storage_bucket": "holdapp-e820a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600375300333:android:6a0194e38b8de49a13bce4",
+        "android_client_info": {
+          "package_name": "com.giglab.holdapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE8bQEnL3O_fvP4nN_2AMoBRN2_euwCEE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
