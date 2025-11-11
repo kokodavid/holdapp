@@ -1,4 +1,4 @@
-package com.example.hold_app
+package com.giglab.holdapp
 
 import io.flutter.embedding.android.FlutterActivity
 
