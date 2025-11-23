@@ -23,7 +23,7 @@ class OnboardingScreen extends StatelessWidget {
       child: BlocListener<OnboardingBloc, OnboardingState>(
         listener: (context, state) {
           if (state is OnboardingCompleted) {
-            AppNavigator.pushNamedAndClearStack(AppRoutes.home);
+            AppNavigator.pushNamedAndClearStack(AppRoutes.getStarted);
           }
         },
         child: Scaffold(
@@ -62,7 +62,7 @@ class OnboardingScreen extends StatelessWidget {
                           backgroundColor: AppColors.lightShade,
                           textColor: AppColors.accent,
                           onPressed: () {
-                            AppNavigator.pushReplacementNamed(AppRoutes.home);
+                            AppNavigator.pushReplacementNamed(AppRoutes.welcomeBack);
                           },
                         ),
                       ],

@@ -12,7 +12,28 @@
           "package_name": "com.giglab.holdapp"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "600375300333-i8al984vqk1gk12a8jlp2dsr6talootj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.giglab.holdapp",
+            "certificate_hash": "96baedcbad751481c8e26bad576dd87bee4cd7a1"
+          }
+        },
+        {
+          "client_id": "600375300333-r0npt2lq2nk8fsn8piaruq1jo6hmv191.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.giglab.holdapp",
+            "certificate_hash": "17193bcb4d6cbaa856f2e6adab2080d1f99f4be2"
+          }
+        },
+        {
+          "client_id": "600375300333-ham1p8biegvbnrrv7uei92mm32k17789.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDE8bQEnL3O_fvP4nN_2AMoBRN2_euwCEE"
@@ -20,7 +41,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "600375300333-ham1p8biegvbnrrv7uei92mm32k17789.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "600375300333-onv3n2skof18kt323rpimqcll4nh89mq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.giglab.holdapp"
+              }
+            }
+          ]
         }
       }
     }
