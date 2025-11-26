@@ -17,6 +17,8 @@ class AppButton extends StatelessWidget {
   final double? borderRadius;
   final EdgeInsetsGeometry? padding;
   final double? elevation;
+  final Image? image;
+
 
   const AppButton({
     super.key,
@@ -33,6 +35,7 @@ class AppButton extends StatelessWidget {
     this.borderRadius,
     this.padding,
     this.elevation,
+    this.image,
   });
 
   @override
@@ -71,29 +74,42 @@ class AppButton extends StatelessWidget {
 
   Widget _buildButtonContent() {
     final textStyle = _getButtonTextStyle();
-    
-    if (icon != null) {
+    Widget? leadingWidget;
+
+    if (image != null) {
+      leadingWidget = SizedBox(
+        width: _getIconSize() + 4,
+        height: _getIconSize() + 4,
+        child: image,
+      );
+    } else if (icon != null) {
+      leadingWidget = Icon(icon, size: _getIconSize());
+    }
+
+    if (leadingWidget != null) {
       return Row(
         mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: iconFirst
             ? [
-                Icon(icon, size: _getIconSize()),
-                const SizedBox(width: 8),
-                Text(text, style: textStyle),
-              ]
+          leadingWidget,
+          const SizedBox(width: 8),
+          Text(text, style: textStyle),
+        ]
             : [
-                Text(text, style: textStyle),
-                const SizedBox(width: 8),
-                Icon(icon, size: _getIconSize()),
-              ],
+          Text(text, style: textStyle),
+          const SizedBox(width: 8),
+          leadingWidget,
+        ],
       );
     }
+
     return Text(text, style: textStyle);
   }
 
   Widget _buildLoadingContent(ThemeData theme) {
     final textStyle = _getButtonTextStyle();
-    
+
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [

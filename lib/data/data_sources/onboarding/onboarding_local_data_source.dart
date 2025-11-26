@@ -18,7 +18,7 @@ class OnboardingLocalDataSourceImpl implements OnboardingLocalDataSource {
       return sharedPreferences.getBool(hasSeenOnboardingKey) ?? false;
     } catch (e, stackTrace) {
       log(e.toString(), stackTrace: stackTrace);
-      return false; // default fallback
+      return false;
     }
   }
 

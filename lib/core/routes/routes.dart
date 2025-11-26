@@ -1,13 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:hold_app/presentation/authpages/auth_screens/welcome_back.dart';
+import 'package:hold_app/presentation/homescreen/home_screen.dart';
+
+import '../../presentation/authpages/auth_screens/get_started.dart';
+import '../../presentation/profile_screen/profile_setup_screen.dart';
 import '../../presentation/splash/screens/splash_screen.dart';
 import '../../presentation/onboarding/screen/onboarding_page.dart';
-import '../../presentation/auth/screen/home_page.dart';
 
 class AppRoutes {
   static const String splash = '/';
   static const String onboarding = '/onboarding';
-  static const String home = '/home';
+  static const String getStarted = '/get-started';
   static const String login = '/login';
+  static const String welcomeBack = '/welcome-back';
+  static const String profileSetupScreen = '/profile-setup-screen';
+  static const String homeScreen = '/homeScreen';
 }
 
 class AppRouteGenerator {
@@ -25,12 +32,29 @@ class AppRouteGenerator {
           settings: settings,
         );
 
-      case AppRoutes.home:
+      case AppRoutes.getStarted:
         return _buildRoute(
-          const HomePage(),
+          const GetStarted(),
           settings: settings,
         );
-        
+
+      case AppRoutes.welcomeBack:
+        return _buildRoute(
+          const WelcomeBack(),
+          settings: settings,
+        );
+
+      case AppRoutes.profileSetupScreen:
+        return _buildRoute(
+          const ProfileSetupScreen(),
+          settings: settings,
+        );
+
+      case AppRoutes.homeScreen:
+        return _buildRoute(
+          const HomeScreen(),
+          settings: settings,
+        );
     
 
       default:
